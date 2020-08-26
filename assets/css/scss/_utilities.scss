@@ -1,0 +1,155 @@
+section {
+    padding: 50px 0;
+    margin: 35px 0;
+}
+
+a {
+    font-family: $primary-font;
+}
+
+p {
+    font-family: $font-secondary;
+    color: #565656;
+}
+
+// TITLES
+.h1-title {
+    font-family: $primary-font;
+    color: $secondary-color;
+    font-size: 20px;
+    margin-bottom: 40px;
+
+    span {
+        color: $primary-color;
+        font-size: 45px;
+        font-weight: bold;
+    }
+}
+
+
+
+// BUTTONS
+.btn-primary {
+    background: $primary-color;
+    font-family: $primary-font;
+    font-weight: 700;
+    padding: 10px 35px;
+    border: 1px solid $primary-color;
+    transition: all .3s;
+    cursor: pointer;
+    @include border-radius(.50rem, .50rem, .50rem, .50rem);
+
+    &:hover {
+        text-decoration: none;
+        background: 0 0;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+}
+
+.btn-whats {
+    background: #1EBEA5;
+    font-family: $primary-font;
+    font-weight: 700;
+    padding: 5px;
+    border: 1px solid #1EBEA5;
+    transition: all .3s;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    margin-top: 6px;
+    display: block;
+    @include border-radius(.50rem, .50rem, .50rem, .50rem);
+
+    &:hover {
+        text-decoration: none;
+        background: 0 0;
+        color: #1EBEA5;
+        border: 1px solid #1EBEA5;
+    }
+}
+
+// INPUTS
+form {
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-family: $primary-font;
+        width: 100%;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        @include border-radius(0, .50rem, .50rem, 0);
+        height: 35px;
+        padding: 0 10px;
+        border-left: 3px solid $primary-color;
+    }
+
+    textarea {
+        min-height: 70px;
+    }
+
+    input[type="submit"] {
+        font-family: $primary-font;
+        width: 100%;
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        @include border-radius(.50rem, .50rem, .50rem, .50rem);
+        color: white;
+        cursor: pointer;
+        height: 40px;
+        transition: all .5s;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        &:hover {
+            background: transparent;
+            color: $primary-color;
+        }
+    }
+}
+
+// BS4 CUSTOM
+@media screen and (min-width: 576px) {
+    .modal-dialog {
+        max-width: 400px;
+        margin: 1.75rem auto;
+    }
+}
+
+
+.service-head {
+    position: relative;
+    margin-bottom: 80px;
+    font-weight: lighter; 
+    font-family: $primary-font;
+    color: $primary-color;
+}
+.service-head::before {
+    
+content: attr(achter);
+position: absolute;
+transform: scale(2.25);
+color: #00000085;
+opacity: 0.1;
+top: 7%;
+/* z-index: -1; */
+line-height: .8;
+font-weight: 800; 
+
+@media (min-width:320px) and (max-width: 450px) {
+content: attr(achter);
+    transform: scale(1.00);
+    top: 7%;
+    left: 0%;
+    }
+
+    @media (min-width:768px) and (max-width: 900px) {
+        content: attr(achter);
+        transform: scale(1.65);
+        top: 7%;
+        left: 21%;
+            }
+    
+}

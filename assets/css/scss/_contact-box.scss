@@ -1,0 +1,46 @@
+#contact-box {
+	position: fixed;
+	right: 20px;
+	bottom: 30px;
+	background: white;
+	z-index: 9999;
+	max-height: 125px;
+	padding: 10px 20px 10px 20px;
+	box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.30);
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+
+	.header {
+		display: block;
+		width: 100%;
+
+		h6 {
+			color: $primary-color;
+			margin-left: 25px;
+			font-weight: bold;
+			text-transform: uppercase;
+			float: left;
+			-webkit-margin-before: 5px;
+			-webkit-margin-after: 10px;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 10px;
+			cursor: pointer;
+		}
+
+		a {
+			float: right;
+			font-size: 1rem;
+			-webkit-margin-before: 3px;
+			-webkit-margin-after: 10px;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+		}
+	}
+
+	a {
+		color: #515151;
+		text-decoration: none;
+		display: inline-block;
+		margin-bottom: 3px;
+	}
+}

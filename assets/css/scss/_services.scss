@@ -1,0 +1,92 @@
+#services {
+    background: transparent;
+
+    .btn {
+        border: 1.3px solid $primary-color;
+        color: $primary-color;
+        font-size: 20px;
+        padding-left: 60px;
+        text-transform: uppercase;
+        padding-right: 60px;
+        text-align: center;
+        border-radius: 0;
+        white-space: normal;
+
+        &:hover {
+            background: $primary-color;
+            color: white;
+            border: 1.3px solid $primary-color;
+        }
+    }
+
+    p {
+        font-family: $font-secondary;
+        font-weight: 300; 
+    }
+
+    .h1-text {
+       font-weight: 200; 
+       font-family: $primary-font;
+       font-size: 23px;
+       color: $primary-color;
+    }
+}
+
+#projetos {
+        width: 100%;
+        background-color: rgba(128,  185,  46,  0.7);
+        background: $primary-color;
+        color: rgba(128,  185,  46,  0.7);
+        transform:  rotate(-3deg) skew(-3deg);
+        -webkit-transform:  rotate(-3deg) skew(-3deg);
+        -moz-transform: rotate(-3deg) skew(-3deg);
+        -o-transform:  rotate(-3deg) skew(-3deg);
+        -ms-transform:  rotate(-3deg) skew(-3deg);
+        .container {
+          padding: 0 100px 100px 100px;
+        }
+
+    .project {
+        max-width: 52%;
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            max-width: 100%;
+        }
+    }
+    
+    #diagonal-text {
+        color: #fff;
+        padding: 35px 0 15px;
+        
+        transform:  rotate(3deg) skew(3deg);
+        -webkit-transform: rotate(3deg) skew(3deg);
+        -moz-transform: rotate(3deg) skew(3deg);
+        -o-transform:  rotate(3deg) skew(3deg);
+        -ms-transform:  rotate(3deg) skew(3deg);
+        margin-bottom: -295px; /* Added */
+        padding-bottom: 50px;
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+      }
+
+      p {
+        font-family: $font-secondary;
+        font-weight: 100; 
+        color: white !important;
+        font-size: 18px;
+        text-align: center;
+        white-space: nowrap;
+        letter-spacing: 0.5px;
+        margin-left: -51px;
+
+        @media (min-width: 320px) and (max-width: 768px) {
+            font-family: $font-secondary;
+        text-align: center;
+        white-space: normal;
+        margin-left: 0;
+        }
+    }
+}

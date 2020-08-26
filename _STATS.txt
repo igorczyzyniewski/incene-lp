@@ -1,0 +1,19 @@
+﻿Analytics = ?
+
+TEXTO = ?
+
+INTEGRAÇÕES = ?
+
+EMAIL INT. = ?
+
+BITBUCKET = ?
+
+REDES SOCIAIS = ?
+
+TELEFONES = ?
+
+ENDEREÇO = ?
+
+PAGE OBRIGADO = ?
+
+OTIMIZAR IMAGENS = ?

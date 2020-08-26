@@ -1,0 +1,10 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Allow: /
+# If your site uses Wordpress, uncomment the under lines
+# Disallow: /wp-admin/
+# Disallow: /wp-includes/
+
+# sitemap: https://yourdomain.com.br/sitemap.xml

@@ -1,0 +1,76 @@
+#cta {
+	//background: $primary-color;
+	background: url("../img/cta.webp");
+	background-size: cover;
+	background-position: center;
+	padding: 50px 0 100px 0;
+	margin-bottom: 50px;
+	
+	width: 100%;
+	transform:  rotate(3deg) skew(3deg);
+	-webkit-transform:  rotate(3deg) skew(3deg);
+	-moz-transform: rotate(3deg) skew(3deg);
+	-o-transform:  rotate(3deg) skew(3deg);
+	-ms-transform:  rotate(3deg) skew(3deg);
+	.container {
+	  padding: 0 100px 100px 100px;
+
+	  @media (min-width: 320px) and (max-width: 768px) {
+
+		padding: 0;
+
+	  }
+	}
+
+	h3 {
+		color: white;
+		font-family: $primary-font;
+		font-weight: 200;
+		font-size: 2.5rem;
+	}
+
+	p {
+		color: white !important;
+		font-family: $font-secondary;
+		font-weight: 100;
+		font-size: 1.1rem;
+	}
+
+	a {
+		color: white;
+		text-transform: uppercase;
+		font-weight: lighter;
+		font-size: 1.3rem;
+		border: 1px solid white;
+		border-radius: 0;
+		padding: 10px;
+		cursor: pointer;
+		white-space: normal;
+		min-width: 260px;
+		;
+
+		&:hover {
+			color: $primary-color;
+			background: white;
+		}
+	}
+
+	#diagonal-text-cta {
+		color: #fff;
+		padding: 35px 0 15px;
+		
+		transform:  rotate(-3deg) skew(-3deg);
+		-webkit-transform: rotate(-3deg) skew(-3deg);
+		-moz-transform: rotate(-3deg) skew(-3deg);
+		-o-transform:  rotate(-3deg) skew(-3deg);
+		-ms-transform:  rotate(-3deg) skew(-3deg);
+		margin-bottom: -140px;
+		padding-bottom: 50px;
+		
+		@media (min-width: 320px) and (max-width: 768px) {
+			margin-bottom: -92px;
+			margin-left: 15px;
+		}
+	  }
+	
+}

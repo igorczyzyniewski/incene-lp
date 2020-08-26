@@ -1,0 +1,136 @@
+footer {
+    padding: 50px;
+    background: #353535;
+    margin-top: -9px;
+
+    @media screen and (max-width: 575px) {
+        padding: 15px;
+    }
+
+    img {
+        @media screen and (max-width: 575px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    h3 {
+        color: white;
+        font-family: $primary-font;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    p,
+    a,
+    span {
+        margin-top: 15px;
+        color: white !important;
+        font-family: $primary-font;
+    }
+
+    .redes-sociais {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .svg-inline--fa {
+        color: #353535;
+        float: left;
+        font-size: 2.1rem;
+        background: white;
+        border: 1px solid white;
+        border-radius: 25px;
+        margin-right: 10px;
+        padding: 10px;
+        width: 40px !important;
+        height: 40px;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    a {
+
+        &:hover,
+        .fab:hover {
+            text-decoration: none;
+            color: $primary-color !important;
+        }
+    }
+
+    .col-sm-3:last-child {
+        padding-top: 20px;
+    }
+}
+
+#form {
+
+    h1 {
+        font-family: $primary-font;
+        font-weight: 200;
+        color: $primary-color;
+    }
+
+    span {
+        text-align: center;
+    }
+
+    input[type="submit"] {
+        font-family: $primary-font;
+        width: 35%;
+        background: transparent;
+        border: 1px solid $primary-color;
+        border-radius: 0;
+        color: $primary-color;
+        cursor: pointer;
+        height: 40px;
+        transition: all .5s;
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: 1.2rem;
+        float: right;
+
+        &:hover {
+            background: transparent;
+            color: $primary-color;
+        }
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: .375rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px solid;
+        color: $primary-color;
+        background-color: #fff;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .form-control_msg {
+        display: block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: .375rem .55rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0;
+        border: 1px solid;
+        color: $primary-color;
+        background-color: #fff;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        min-height: 150px;
+    }
+
+    ::placeholder {
+        font-family: $primary-font;
+        font-weight: 300;
+        font-style: italic;
+        opacity: 0.7;
+    }
+}
